@@ -1,0 +1,28 @@
+{
+  "name": "smart-gym-management-system",
+  "version": "1.0.0",
+  "description": "Web-based gym management system for SFW THE GYM",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "seed": "npm --prefix backend run seed",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "gym-management-system",
+    "react",
+    "express",
+    "sqlite",
+    "fullstack",
+    "project"
+  ],
+  "author": "Jignesh Prajapati",
+  "license": "MIT"
+}
